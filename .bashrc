@@ -16,5 +16,4 @@ fi
 
 
 # Put your fun stuff here.
-transset 0.8 --id $WINDOWID
-clear
+colorscript -r
