@@ -1,0 +1,24 @@
+sys-kernel/installkernel dracut
+# required by media-libs/mesa-25.0.5::gentoo
+# required by x11-base/xorg-server-21.1.16::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.5.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+# required by x11-base/xorg-drivers (argument)
+>=media-libs/libglvnd-1.7.0 X
+# required by x11-base/xorg-server-21.1.16::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.5.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+# required by x11-base/xorg-drivers (argument)
+>=media-libs/mesa-25.0.5 X
+# required by x11-base/xorg-server-21.1.16::gentoo[-minimal]
+# required by x11-drivers/xf86-input-libinput-1.5.0::gentoo
+# required by x11-base/xorg-drivers-21.1-r2::gentoo[input_devices_libinput]
+# required by x11-base/xorg-drivers (argument)
+>=media-libs/libepoxy-1.5.10-r3 X
+# required by xfce-base/thunar-volman-4.20.0::gentoo
+# required by xfce-base/thunar-volman (argument)
+>=xfce-base/thunar-4.20.2 udisks
+# required by xfce-base/thunar-4.20.2::gentoo[udisks]
+# required by xfce-base/thunar-volman-4.20.0::gentoo
+# required by xfce-base/thunar-volman (argument)
+>=gnome-base/gvfs-1.52.3-r1 udisks
