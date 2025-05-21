@@ -1,0 +1,3 @@
+Use siduck's fork of st.
+Modify xresources to set theme colors and terminal opacity, then cp xresources in st dir to ~/.Xresources
+Modify and patch st via config.def.h and then sudo make clean install to apply changes.

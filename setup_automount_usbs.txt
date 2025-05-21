@@ -1,0 +1,54 @@
+1. Install Udev (if not installed)
+
+Most Gentoo systems already have Eudev (Gentoo’s fork of Udev). If you need to install it:
+bash
+sudo emerge --ask sys-fs/eudev
+
+2. Create Udev Rules for USB Automount
+
+Edit the Udev rules file:
+bash
+sudo nano /etc/udev/rules.d/99-usb-automount.rules
+Add the following:
+ACTION=="add", KERNEL=="sd[a-z][0-9]", RUN+="/usr/local/bin/usb-mount.sh %k"
+ACTION=="remove", KERNEL=="sd[a-z][0-9]", RUN+="/usr/local/bin/usb-unmount.sh %k"
+
+This tells Udev to run a script when a USB device is plugged in or removed.
+3. Create the Mount Script
+
+Now, create the script that will automount USB devices:
+sudo nano /usr/local/bin/usb-mount.sh
+Add:
+#!/bin/bash
+MOUNT_POINT="/media/$1"
+mkdir -p "$MOUNT_POINT"
+mount "/dev/$1" "$MOUNT_POINT"
+Make it executable:
+sudo chmod +x /usr/local/bin/usb-mount.sh
+
+4. Create the Unmount Script
+
+sudo nano /usr/local/bin/usb-unmount.sh
+Add:
+#!/bin/bash
+MOUNT_POINT="/media/$1"
+umount "$MOUNT_POINT"
+rmdir "$MOUNT_POINT"
+
+Make it executable:
+sudo chmod +x /usr/local/bin/usb-unmount.sh
+
+5. Reload Udev Rules
+
+Apply the new rules:
+sudo udevadm control --reload-rules
+
+Then, trigger Udev manually:
+sudo udevadm trigger
+
+6. Test USB Automounting
+
+Plug in a USB device and check:
+ls /media
+
+If everything is set up correctly, your USB should automount automatically!
