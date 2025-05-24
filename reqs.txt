@@ -1,7 +1,7 @@
 iwgtk
 xbacklight
 rust
-bottom (need rust)
+bottom
 librewolf
 neofetch
 NetworkManager
@@ -10,12 +10,15 @@ coreutils
 ntfs-3g
 os-prober
 chadwm
-st
+siduck's st
 picom
 eselect
 git
 htop
-ly
 udisks
 xorg-server
 light
+alsa-utils
+lightdm
+lightdm-gtk-greeter
+gentoolkit
