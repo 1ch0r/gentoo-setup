@@ -4,8 +4,7 @@ Xft.autohint:	0
 Xft.hintstyle:	hintslight
 Xft.rgba:	rgb
 Xft.lcdfilter:	lcddefault
-
-st.font:         JetBrainsMono Nerd Font:style:medium:pixelsize=12
+Xft.font: Tiposka Dev:style=Regular:pixelsize=12
 
 ! window padding
 st.borderpx: 20
