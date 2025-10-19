@@ -1,0 +1,14 @@
+#!/bin/dash
+
+# colors
+
+black=#282A36  # background dracula
+green=#50fa7b  # neo green
+white=#f8f8f2 # cream white
+grey=#282a36 # dark gray
+blue=#8be9fd # cyan
+red=#ff5555 # red
+darkblue=#bd93f9 # purple
+yellow=#f1fa8c # yellow
+
+
