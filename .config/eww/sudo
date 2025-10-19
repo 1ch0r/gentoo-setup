@@ -1,0 +1,2 @@
+net-misc/networkmanager -modemmanager /etc/portage/package.use/networkmanager
+net-misc/connman wifi ethernet vpn openrc /etc/portage/package.use/connman

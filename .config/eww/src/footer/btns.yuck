@@ -1,0 +1,34 @@
+(defwidget btn [name command class]
+  (box :orientation "v"
+       :halign "center"
+       :class "btnMargin"
+    (button :onclick command 
+        :class "btn ${class}" 
+      name))
+)
+
+(defwidget btns []
+  (box :orientation "h"
+       :class 'footerBtns'
+ 
+  (btn :name ""
+  :command "rofi -show drun &"
+    :class "restart"
+  )
+
+(btn :name "󰤯"
+  :command "iwgtk &"
+  :class "wifi"
+ )
+
+
+(btn :name ""
+  :command "pkill -KILL -u $USER"
+  :class "lock"
+ )
+
+ (btn :name "" 
+    :command "sudo shutdown -h now"
+    :class "shutdown"
+  )
+))

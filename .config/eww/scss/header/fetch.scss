@@ -1,0 +1,29 @@
+.fetchContent {
+  padding: 2rem 0;
+  font-family: 'Tiposka Dev';
+  color: $white;
+  border-right: 2px solid $grey;
+}
+
+.logo {
+  font-family: 'Tiposka Dev';
+  font-size: 5rem; // 6
+  color: $purple;
+  margin-right: 2rem;
+}
+
+.fetch {
+  //background-color: $blackAlt;
+  border-radius: 1rem; // 1
+  margin-bottom: 2rem; // 2
+  margin-top: .6rem; // .6
+}
+
+.fetchTitles {
+  color: $red;
+  padding-right: 1rem
+}
+
+.hdd {
+  margin: 1rem;
+}

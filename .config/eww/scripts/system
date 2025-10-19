@@ -1,0 +1,30 @@
+#!/bin/sh
+#
+battery() {
+	cat /sys/class/power_supply/BAT0/capacity
+}
+
+cpu() {
+	grep -o "^[^ ]*" /proc/loadavg
+}
+
+disk() {
+	df --output=pcent . | tail -n 1 | tr -d '[:space:]|%'
+}
+
+ram() {
+	printf "%.0f\n" $(free -m | grep Mem | awk '{print ($3/$2)*100}')
+}
+
+brightness() {
+	printf "%.0f\n" $(brightnessctl get | awk -v max=$(brightnessctl max) '{printf "%.0f\n", ($1 / max) * 100}')
+}
+
+wifi() {
+	case "$(cat /sys/class/net/wl*/operstate 2>/dev/null)" in
+	up) printf "󰤨" ;;
+	down) printf "󰤭" ;;
+	esac
+}
+
+"$@"

@@ -1,0 +1,53 @@
+.btn {
+  font-family: "Tiposka Dev";
+  font-size: 2.5rem;
+  padding: 0 1.3rem;
+  box-shadow: none;
+  //background-color: $grey;
+  border-radius: 100%; // 50
+}
+
+.close {
+  color: $red;
+}
+
+.shutdown {
+  color: $red;
+}
+
+.restart {
+  color: $green;
+}
+
+.lock {
+  color: $blue;
+  padding: 0 1.4rem;
+}
+
+.lock:hover , .restart:hover, .wifi:hover, .shutdown:hover{
+  //background-color: $white;
+  color: $white;
+}
+
+.wifi {
+  //background-color: $purple;
+  color: $purple;
+  padding: 0 1.1rem;
+  font-size: 2.7rem; //2.7rem
+}
+
+.lock, .restart, .close, .wifi{
+  transition: ease-out .2s;
+}
+
+.btnMargin {
+  //background-color: $grey;
+  border-radius: 100%; //50
+  margin: 1rem; //0.6rem
+}
+
+.footerBtns {
+  //background-color: $blackAlt;
+  padding: 1rem; // 0.5
+  border-radius: 1.3rem; //1.3
+}
