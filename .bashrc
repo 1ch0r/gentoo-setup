@@ -17,3 +17,7 @@ fi
 
 # Put your fun stuff here.
 colorscript -r
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+
+. "$HOME/.local/bin/env"
