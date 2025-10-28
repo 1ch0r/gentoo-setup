@@ -1,16 +1,13 @@
-iwgtk
 xbacklight
 rust
 bottom
 librewolf
 neofetch
-NetworkManager
 alsa
 coreutils
-ntfs-3g
+ntfs3g
 os-prober
-chadwm
-siduck's st
+devwm
 picom
 eselect
 git
@@ -19,6 +16,12 @@ udisks
 xorg-server
 light
 alsa-utils
-lightdm
-lightdm-gtk-greeter
+SLiM
 gentoolkit
+imlib2
+libXinerama
+iwd/iwgtk
+dhcpcd
+git
+ranger
+rofi
